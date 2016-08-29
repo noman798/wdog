@@ -13,7 +13,7 @@ catch error
 
 module.exports = {
     WILDDOG:{
-        KEY : "请访问 野狗 > 身份认证 > 登录方式 · 页面底部 > 超级密钥 获取第一个超级密钥"
+        KEY : "访问 http://wilddog.com > 应用 > 身份认证 > 登录方式 · 页面底部 > 超级密钥 获取第一个超级密钥"
         SITE : "你的应用ID"
     }
 }
