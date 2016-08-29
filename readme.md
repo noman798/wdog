@@ -1,4 +1,4 @@
-> npm install`
+> npm install
 
 然后
 
