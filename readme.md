@@ -33,7 +33,6 @@ USER_IS_ADMIN = "root.child('group').child('admin').child(auth.uid).val() == tru
 
 GROUP_ADMIN_RW = "#{USER_IS_ADMIN} || (!root.hasChildren(['group','admin']))"
 
-
 module.exports = \
 {
     rules: {
