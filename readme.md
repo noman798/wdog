@@ -27,7 +27,7 @@ module.exports = \
     }
 }
 ```
-为了少打引号，也可以用类似 $write 替代 ".write"，上传工具会自动处理转换
+为了少打引号，也可以用类似 $write 替代 ".write" 等等，上传工具会自动处理转换，比如
 ```
 USER_IS_ADMIN = "root.child('group').child('admin').child(auth.uid).val() == true"
 
