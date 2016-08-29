@@ -1,6 +1,6 @@
 {
   "name": "wdog",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "scripts": {},
   "bin":{
     "wdog":"wdog"
