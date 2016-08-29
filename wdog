@@ -18,7 +18,7 @@ rpush = ->
     rule = require("#{cwd}/wdog_rules.coffee")
     wapi.put(
         ".settings/rules"
-        JSON.stringify(rule, null, 4)
+        JSON.stringify(rule, null, 2).replace(/"\$write"/g,"\".write\"").replace(/"\$read"/g,"\".read\"").replace(/"\$validate"/g,"\".validate\"")
         (error, res, body)->
             console.log body
     )
