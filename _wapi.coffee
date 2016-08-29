@@ -1,6 +1,25 @@
 #! /usr/bin/env coffee
 
-CONFIG = require("#{process.cwd()}/config.coffee")
+_config = "#{process.cwd()}/config.coffee"
+try
+    CONFIG = require(_config)
+catch error
+    console.log("""
+出错了！！！
+
+#{_config} 不存在，请创建。
+
+格式样板：
+
+module.exports = {
+    WILDDOG:{
+        KEY : "请访问 野狗 > 身份认证 > 登录方式 · 页面底部 > 超级密钥 获取第一个超级密钥"
+        SITE : "你的应用ID"
+    }
+}
+""")
+    process.exit()
+
 Wilddog = require("wilddog")
 WilddogTokenGenerator = require("wilddog-token-generator")
 request = require('request')
