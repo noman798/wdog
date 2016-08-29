@@ -4,9 +4,10 @@ wdog rp 可以部署新的规则，规则wdog_rules.coffee是一个coffeescript�
 比如：
 
 ```
-GROUP_ADMIN = "root.child('group').child('auth.uid').val() == true"
+USER_IS_ADMIN = "root.child('group').child('auth.uid').val() == true"
 
-GROUP_ADMIN_RW = "#{GROUP_ADMIN} || (!root.hasChildren(['group','admin']))"
+GROUP_ADMIN_RW = "#{USER_IS_ADMIN} || (!root.hasChildren(['group','admin']))"
+
 
 module.exports = \
 {
