@@ -1,24 +1,25 @@
 {
   "name": "wdog",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "scripts": {},
-  "bin":{
-    "wdog":"wdog"
+  "bin": {
+    "wdog": "wdog"
   },
   "description": "An easy wilddog.com client",
   "license": "MIT",
   "dependencies": {
     "coffee": "^3.2.5",
+    "coffee-script": "^1.10.0",
     "request": "^2.74.0",
     "wilddog-token-generator": "0.0.0",
     "yargs": "^5.0.0"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/noman798/wdog"
+    "type": "git",
+    "url": "https://github.com/noman798/wdog"
   },
   "bugs": {
-      "type": "git",
-      "url": "https://github.com/noman798/wdog/issues"
+    "type": "git",
+    "url": "https://github.com/noman798/wdog/issues"
   }
 }
