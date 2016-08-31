@@ -8,7 +8,6 @@
   "description": "An easy wilddog.com client",
   "license": "MIT",
   "dependencies": {
-    "coffee": "^3.2.5",
     "coffee-script": "^1.10.0",
     "request": "^2.74.0",
     "wilddog-token-generator": "0.0.0",
