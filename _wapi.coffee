@@ -20,7 +20,6 @@ module.exports = {
 """)
     process.exit()
 
-Wilddog = require("wilddog")
 WilddogTokenGenerator = require("wilddog-token-generator")
 request = require('request')
 
