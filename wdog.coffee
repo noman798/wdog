@@ -1,4 +1,3 @@
-
 wapi = require("./_wapi.coffee")
 fs = require('fs')
 
@@ -18,7 +17,7 @@ rpush = ->
     rule = require("#{cwd}/wdog_rules.coffee")
     wapi.put(
         ".settings/rules"
-        JSON.stringify(rule, null, 2).replace(/"\_write"/g,"\".write\"").replace(/"\_read"/g,"\".read\"").replace(/"\_validate"/g,"\".validate\"")
+        JSON.stringify(rule, null, 2).replace(/"\_write"/g,"\".write\"").replace(/"\_read"/g,"\".read\"").replace(/"\_validate"/g,"\".validate\"").replace(/"\_indexOn"/g,"\".indexOn\"")
         (error, res, body)->
             console.log body
     )
